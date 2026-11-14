@@ -1,4 +1,4 @@
-# Lightweight Zero-Dependency Local Web Server for JobPulse
+# Lightweight Zero-Dependency Local Web Server for Ibrahim Hashimu Portfolio
 param(
     [int]$Port = 5050
 )
@@ -13,12 +13,12 @@ $listener.Prefixes.Add($Prefix)
 try {
     $listener.Start()
     Write-Host "==========================================================" -ForegroundColor Cyan
-    Write-Host " JobPulse Web Server Running at: $Prefix" -ForegroundColor Green
+    Write-Host " Ibrahim Hashimu Portfolio Server Running at: $Prefix" -ForegroundColor Green
     Write-Host " Root Directory: $RootPath" -ForegroundColor DarkCyan
     Write-Host " Press Ctrl+C in this console to stop the server." -ForegroundColor Yellow
     Write-Host "==========================================================" -ForegroundColor Cyan
 
-    # Try launching default web browser
+    # Launch default web browser
     try { Start-Process $Prefix -ErrorAction SilentlyContinue } catch {}
 
     while ($listener.IsListening) {
@@ -26,12 +26,15 @@ try {
         $request = $context.Request
         $response = $context.Response
 
-        $urlPath = $request.Url.LocalPath.TrimStart('/')
+        $urlPath = [System.Uri]::UnescapeDataString($request.Url.LocalPath.TrimStart('/'))
         if ([string]::IsNullOrWhiteSpace($urlPath)) {
             $urlPath = "index.html"
         }
 
         $filePath = Join-Path $RootPath $urlPath
+        if (Test-Path $filePath -PathType Container) {
+            $filePath = Join-Path $filePath "index.html"
+        }
 
         if (Test-Path $filePath -PathType Leaf) {
             $ext = [System.IO.Path]::GetExtension($filePath).ToLower()
@@ -41,6 +44,7 @@ try {
                 ".css"  { "text/css; charset=utf-8" }
                 ".js"   { "application/javascript; charset=utf-8" }
                 ".json" { "application/json; charset=utf-8" }
+                ".pdf"  { "application/pdf" }
                 ".svg"  { "image/svg+xml" }
                 ".png"  { "image/png" }
                 ".jpg"  { "image/jpeg" }
@@ -73,4 +77,3 @@ finally {
     }
     $listener.Close()
 }
-

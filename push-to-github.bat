@@ -1,13 +1,15 @@
 @echo off
-title Push JobPulse to GitHub
+title Publish Ibrahim Hashimu Portfolio to GitHub Pages
 echo ========================================================
-echo  Pushing JobPulse to GitHub: Hashimu2/Ibrahim224
+echo  Publishing Portfolio to GitHub: Hashimu2/Ibrahim224
 echo ========================================================
 set "PATH=%LOCALAPPDATA%\Programs\MinGit\cmd;%PATH%"
+git add .
+git commit -m "Publish Ibrahim Hashimu authentic public health portfolio"
 git push -u origin main
 echo.
 if %ERRORLEVEL% equ 0 (
-    echo [SUCCESS] Code successfully pushed to GitHub!
+    echo [SUCCESS] Portfolio successfully pushed to GitHub!
     echo Your public repository: https://github.com/Hashimu2/Ibrahim224
     echo Your public live web link: https://hashimu2.github.io/Ibrahim224/
 ) else (
