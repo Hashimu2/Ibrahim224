@@ -1,85 +1,36 @@
-# JobPulse — Job Tracking & Recruitment Application
+# 🩺 Ibrahim Hashimu — Public Health Professional & Inclusion Health Desk Officer
 
-A modern, responsive web application for posting job openings, tracking applications, and managing candidate pipelines. Built with a fresh **Light Blue** design theme and zero external dependencies.
-
----
-
-## 🌟 Key Features
-
-### 1. 💼 Candidate / Normal User Portal
-- **Browse Active Openings:** Filter jobs by Department, Work Mode (Remote, Hybrid, On-site), Employment Type (Full-Time, Part-Time, Contract), and Experience Level.
-- **Search:** Search across job titles, requirements, locations, and descriptions.
-- **Detailed Job Overview:** Full breakdown of job overview, key responsibilities, required qualifications, salary ranges, benefits, and deadlines.
-- **Online Job Application Form:**
-  - Candidate profile information (Name, Email, Phone, Location, Current Title, Years of Experience).
-  - Portfolio & LinkedIn links.
-  - Expected Compensation & Earliest Start Date.
-  - Resume / CV file upload with drag-and-drop support.
-  - Cover letter / Personal statement.
-  - Instant application submission with a unique tracking code (e.g., `TRK-849201`).
-- **My Applications Tracker:**
-  - Real-time step progress indicator for every application:
-    `Applied` ➔ `Reviewing` ➔ `Shortlisted` ➔ `Interview Scheduled` ➔ `Offer / Hired` (or `Rejected`).
-  - View interview status, notes, and attached documents.
-
-### 2. 🛡️ Admin / Recruiter Portal
-- **KPI Metrics Dashboard:**
-  - Live count of Active Openings, Total Applicants, Candidates in Interview, and Offers/Hires.
-- **Post & Edit Job Openings:**
-  - Create new job postings with custom departments, locations, work modes, salary ranges, and deadlines.
-  - Rich lists for responsibilities, qualifications, and perks.
-  - Mark jobs as "Featured".
-- **Job Management:**
-  - Activate, pause/close, edit, or delete job postings.
-  - One-click applicant count linking directly to candidate reviews.
-- **Candidate Pipeline & ATS (Applicant Tracking System):**
-  - **Kanban Board View:** Visual stage-by-stage columns (`New Applied`, `Under Review`, `Shortlisted`, `Interview`, `Offer / Hired`, `Rejected`).
-  - **Table View:** Searchable candidate roster with status badges and star ratings.
-  - **Candidate Evaluation Modal:**
-    - Complete applicant profile, resume document viewer, and cover letter.
-    - 5-Star candidate rating system.
-    - One-click stage advancement buttons.
-    - Internal recruiter notes log with author names and timestamps.
-
-### 3. 🎨 Design & Aesthetic
-- **Primary Color:** Light Blue (`#38bdf8`, `#0ea5e9`, `#0284c7`, `#e0f2fe`).
-- Modern typography, sleek card shadows, glassmorphism header, and responsive layout.
-- Persistent local storage: updates stay saved across page refreshes.
-- Data export to JSON and instant demo reset.
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Ibrahim%20Hashimu-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/ibrahim-hashimu-573933297/)
+[![Live Portfolio](https://img.shields.io/badge/Live%20Portfolio-hashimu2.github.io-10B981?style=for-the-badge&logo=google-chrome&logoColor=white)](https://hashimu2.github.io/Ibrahim224/)
+[![GitHub](https://img.shields.io/badge/GitHub-Hashimu2-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Hashimu2)
+[![Email](https://img.shields.io/badge/Email-ibrahimhashimu222%40gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:ibrahimhashimu222@gmail.com)
 
 ---
 
-## 🚀 How to Run the Application
-
-### Option 1: Double-Click (Recommended)
-Double-click `start.bat` in the project root folder. It starts a lightweight local server and automatically opens the application in your browser at `http://localhost:5050`.
-
-### Option 2: Open Directly in Any Web Browser
-Simply double-click `index.html` or open it with Google Chrome, Microsoft Edge, or Mozilla Firefox.
-
-### Option 3: PowerShell
-Run the following in PowerShell:
-```powershell
-powershell -ExecutionPolicy Bypass -File .\start-server.ps1
-```
+## 🔗 Connect With Me
+- **LinkedIn:** [https://www.linkedin.com/in/ibrahim-hashimu-573933297/](https://www.linkedin.com/in/ibrahim-hashimu-573933297/)
+- **Live Portfolio Website:** [https://hashimu2.github.io/Ibrahim224/](https://hashimu2.github.io/Ibrahim224/)
+- **GitHub Profile:** [https://github.com/Hashimu2](https://github.com/Hashimu2)
+- **Email:** [ibrahimhashimu222@gmail.com](mailto:ibrahimhashimu222@gmail.com)
+- **Phone:** +234 703 080 6107 (`07030806107`)
+- **Location:** Kaduna State, Nigeria
 
 ---
 
-## 📁 File Structure
-```
-DSFP 6.0/
-├── index.html              # Main HTML markup & modal dialogs
-├── start.bat               # One-click Windows runner
-├── start-server.ps1        # Pure PowerShell zero-dependency HTTP server
-├── README.md               # Application documentation
-├── css/
-│   ├── style.css           # Core Light Blue theme variables, layout & cards
-│   └── components.css      # Modals, Kanban board, tables, badges, toasts
-└── js/
-    ├── seedData.js         # Realistic initial job openings & candidate applications
-    ├── store.js            # Reactive state management with localStorage persistence
-    ├── user.js             # Candidate portal search, details modal & application form
-    ├── admin.js            # Admin recruitment pipeline, ATS Kanban, job manager & ratings
-    └── app.js              # Application coordinator, role switching & toast system
-```
+## 👤 About Me
+My name is **Ibrahim Hashimu**, a Public Health Professional and **Inclusion Health Desk Officer** with the **Kaduna State Primary Health Care Board (KSPHCB)**, under the Department of Community Health Services.
 
+I hold a **Bachelor of Science in Health Education** from **Bayero University, Kano**, and I am currently pursuing a **Master of Public Health (MPH)**, specialising in Health Education and Promotion.
+
+> *"Data has the power to change the narrative. Accurate and meaningful data should guide decisions, improve healthcare delivery, and ensure that no one is left behind."*
+
+### Core Areas of Expertise
+- **Public Health & Inclusion:** Disability-Inclusive Healthcare Programmes, Health Facility Accessibility Audits, Inclusive Family Planning (IF PLAN), Adolescent & Maternal Health, Social and Behaviour Change Communication (SBC), UNICEF-Supported Interventions.
+- **Data Analytics & Digital Health:** DHIS2, Health Data Management, Monitoring & Evaluation (M&E), Microsoft Excel, Power BI, Google Colab, ODK, Quantitative Time-Series Research.
+
+---
+
+## 📄 Featured Documents & Research in This Repository
+- 📥 **[Official Curriculum Vitae (PDF)](https://hashimu2.github.io/Ibrahim224/assets/Ibrahim_Hashimu_CV.pdf)**
+- 📊 **[Research Study (PDF): Analysis of Malaria Incidence and Seasonal Trends Using Historical Data in Kaduna State, Nigeria (2018–2022)](https://hashimu2.github.io/Ibrahim224/assets/Malaria_Incidence_Research_Ibrahim_Hashimu.pdf)**
+- 📋 **[Research Desk Review Presentation (PPTX)](https://hashimu2.github.io/Ibrahim224/assets/Malaria_Research_Desk_Review_Ibrahim_Hashimu.pptx)**
